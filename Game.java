@@ -13,7 +13,7 @@ public class Game implements KeyListener{
     volatile String currentKey = "";        //volatile because KeyListener and rest of Game run in two different threads
     int rounds = 30;
     int mistakes = 0;
-    boolean skipCountdown = true;          //for debugging purposes
+    boolean skipCountdown = false;          //for debugging purposes
 
     public Game(){
         HighScore highscore = new HighScore();
